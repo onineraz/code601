@@ -49,6 +49,7 @@ jobs: # 수행할 내용.
       with:
         repository: onineraz/my_deploy #본인에 맞게 수정
         ref: main  # branch
+        token: ${{ secrets.GH_TOKEN }}  //추가
 
     - name: k8s manifest update
       run: |
